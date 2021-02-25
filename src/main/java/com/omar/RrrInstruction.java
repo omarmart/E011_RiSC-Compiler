@@ -14,7 +14,7 @@ public class RrrInstruction implements Instruction {
     }
 
     @Override
-    public String parseToHex() {
+    public byte[] parseToHex() {
         // TODO Auto-generated method stub
         return null;
     }
