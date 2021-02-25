@@ -14,6 +14,7 @@ public enum OperationCode {
     private String name;
 
     private OperationCode(int id, String name) {
-
+        this.id = id;
+        this.name = name;
     }
 }
