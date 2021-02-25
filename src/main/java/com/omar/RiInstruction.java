@@ -1,11 +1,9 @@
 package com.omar;
 
-import java.rmi.server.Operation;
-
 public class RiInstruction implements Instruction {
-    private OperationCode opCode;
-    private Register registerA;
-    private int immediate;
+    private final OperationCode opCode;
+    private final Register registerA;
+    private final int immediate;
 
     public RiInstruction(OperationCode opCode, Register registerA, int immediate) {
         this.opCode = opCode;
@@ -23,6 +21,18 @@ public class RiInstruction implements Instruction {
     public String toString() {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    public OperationCode getOpCode() {
+        return opCode;
+    }
+
+    public Register getRegisterA() {
+        return registerA;
+    }
+
+    public int getImmediate() {
+        return immediate;
     }
 
 }

@@ -1,10 +1,10 @@
 package com.omar;
 
 public class RrrInstruction implements Instruction {
-    private OperationCode opCode;
-    private Register registerA;
-    private Register registerB;
-    private Register registerC;
+    private final OperationCode opCode;
+    private final Register registerA;
+    private final Register registerB;
+    private final Register registerC;
 
     public RrrInstruction(OperationCode opCode, Register registerA, Register registerB, Register registerC) {
         this.opCode = opCode;
@@ -23,6 +23,22 @@ public class RrrInstruction implements Instruction {
     public String toString() {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    public OperationCode getOpCode() {
+        return opCode;
+    }
+
+    public Register getRegisterA() {
+        return registerA;
+    }
+
+    public Register getRegisterB() {
+        return registerB;
+    }
+
+    public Register getRegisterC() {
+        return registerC;
     }
 
 }
