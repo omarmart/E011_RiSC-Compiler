@@ -31,5 +31,9 @@ public class RiInstructionTest {
         String instString = inst.toString();
         assertEquals("Failed to parse to String", "lui r4 11", instString);
     }
+
+    @Test(expected = InstructionFormatException.class)
+    public void shouldThrowExceptionOnOutOfRangeImmediate() {
+        new RiInstruction(OperationCode.LUI, Register.R3, 710);
     }
 }
