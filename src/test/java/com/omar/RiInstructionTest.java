@@ -29,6 +29,7 @@ public class RiInstructionTest {
     public void shouldParseToString() {
         RiInstruction inst = new RiInstruction(OperationCode.LUI, Register.R4, 11);
         String instString = inst.toString();
-        assertEquals("Failed to parse to String", "lui 4 11", instString);
+        assertEquals("Failed to parse to String", "lui r4 11", instString);
+    }
     }
 }
