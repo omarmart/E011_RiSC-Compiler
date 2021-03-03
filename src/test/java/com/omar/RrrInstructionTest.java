@@ -13,7 +13,7 @@ public class RrrInstructionTest {
         assertEquals("Failed to set OperationCode", OperationCode.ADD, inst.getOpCode());
         assertEquals("Failed to set RegisterA", Register.R7, inst.getRegisterA());
         assertEquals("Failed to set RegisterB", Register.R6, inst.getRegisterB());
-        assertEquals("Failed to set immediate", Register.R5, inst.getRegisterC());
+        assertEquals("Failed to set RegisterC", Register.R5, inst.getRegisterC());
     }
 
     @Test
