@@ -10,11 +10,19 @@ public enum OperationCode {
     BEQ(0b110, "beq"), //
     JALR(0b111, "jalr");
 
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
 
     private OperationCode(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
     }
 }
